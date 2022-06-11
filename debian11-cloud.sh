@@ -29,5 +29,6 @@ qm set $VMID --ipconfig0 ip=dhcp
 qm set $VMID --agent enabled=1,fstrim_cloned_disks=1
 qm resize $VMID scsi0 $DISK_SIZE
 qm template $VMID
-# Remove downloaded image
+
+# Step 4: Remove downloaded image
 rm $IMG_NAME
