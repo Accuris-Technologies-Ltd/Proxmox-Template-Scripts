@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# Fail safely if error occurs
+set -eo pipefail
+
 # Define variables used in this script
 SRC_IMG="https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64-disk-kvm.img"
 IMG_NAME="/root/focal-server-cloudimg-amd64-disk-kvm.qcow2"

@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# Fail safely if error occurs
+set -eo pipefail
+
 # Define variables used in this script
 SRC_IMG="https://repo.almalinux.org/almalinux/8/cloud/x86_64/images/AlmaLinux-8-GenericCloud-latest.x86_64.qcow2"
 IMG_NAME="/root/AlmaLinux-8-GenericCloud-latest.x86_64.qcow2"

@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# Fail safely if error occurs
+set -eo pipefail
+
 # Define variables used in this script
 SRC_IMG="https://cloud.debian.org/images/cloud/buster/latest/debian-10-genericcloud-amd64.qcow2"
 IMG_NAME="/root/debian-10-genericcloud-amd64.qcow2"
